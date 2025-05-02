@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Core Guard Mist | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Only loading Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/cover.css">
+  <link rel="stylesheet" href="styles/product_page.css">
+  <link rel="icon" href="icons/logo3.png" type="image/x-icon">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      overflow-x: hidden;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 1;
+      height: 100vh; /* Fixes mismatch */
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100;
+      border: none;
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="cover" id="coverPage">
+    <div class="cover-bg"></div>
+    <p class = "slogan">PROTECT YOUR HOME WITH</p>
+    <p class = "product-title">CORE GUARD MIST</p>
+    
+    <button class="swipe-btn" onclick="revealMain()"> >>></button>
+  </div>
+
+  <div class="main-content">
+    <iframe src="product_page.html" frameborder="0" style="width:100vw; height:100vh;"></iframe>
+  </div>
+
+  <script src="scripts/cover.js"></script>
+
+</body>
+</html>

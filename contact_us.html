@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Core Guard Mist | Contact Us</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/product_page.css">
+  <link rel="stylesheet" href="styles/contact_us.css">
+  <link rel="icon" href="icons/logo3.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <img src="icons/hamburger_menu.svg" class="icons hamburger_menu" id="menuBtn" alt="Menu">
+    <img src="icons/logo3.png" class="logo">
+    <p class="product-page-title">Core Guard Mist</p>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sections">
+      <a href="main.html">
+        <div class ="sidebar-link ">
+            <img src="icons/home.svg" class="icons-sidebar">
+        <div>Home</div>
+        </div>
+      </a>
+
+      <a href="product_info.html">
+        <div class ="sidebar-link">
+            <img src="icons/info.svg" class="icons-sidebar">
+            <div>Product Info</div>
+        </div>
+      </a>
+
+    </div>
+        
+      <div class="sections">
+          <p class="section-names">About Us</p>
+          <a href="owners.html">
+              <div class ="sidebar-link">
+                  <img src="icons/owner.svg" class="icons-sidebar">
+                  <div>Owners</div>
+              </div>
+          </a>
+
+          <a href="vision_mission.html">
+            <div class ="sidebar-link">
+                <img src="icons/vision_mission.svg" class="icons-sidebar">
+                <div>Vision & Mission</div>
+            </div>
+        </a>
+
+          <a href="contact_us.html">
+              <div class ="sidebar-link">
+                  <img src="icons/contact.svg" class="icons-sidebar">
+                  <div>Contact Us</div>
+              </div>
+          </a>
+      </div>
+
+      <div class="sections">
+        <p class="section-names">Socials</p>
+          
+          <a href="https://www.facebook.com" target = "_blank">
+              <div class ="sidebar-link">
+                  <img src="icons/facebook.svg" class="icons-sidebar">
+                  <div>Facebook</div>
+              </div>
+          </a>
+
+          <a href="https://www.instagram.com" target="_blank">
+              <div class ="sidebar-link">
+                  <img src="icons/instagram.svg" class="icons-sidebar">
+                  <div>Instagram</div>
+              </div>
+          </a>
+      </div>
+  </div>
+  <!-- <div class="overlay" id="overlay"></div> -->
+
+  <div class="other-content">
+    <h1 class="section-title"> CONTACT</h1>
+    <div class="container">
+      <p class="section-subtitle">We'd <span style="font-weight: bold;">♡</span> to help!</p>
+      <p class="section-text">We like to create things with fun, open-minded people. Feel free to say hello!</p>
+
+      <div class="container2">
+        <div class="left">
+          <div class="input-container">
+            <input type="text" id="name" placeholder="Your Name">
+            <div class="error-message" id="name-error">This field is required.</div>
+          </div>
+          <div class="input-container">
+            <input type="email" id="email" placeholder="Email">
+            <div class="error-message" id="email-error">This field is required.</div>
+          </div>
+          <div class="input-container">
+            <textarea rows="5" cols="30" id="message" placeholder="Enter your message..." class="message-box"></textarea>
+            <div class="error-message" id="message-error">This field is required.</div>
+          </div>
+          <div class="input-container">
+            <div id="captcha-challenge" class = "captcha-Challenge">Captcha Challenge: </div>
+            <input type="text" id="captcha" placeholder="Enter Captcha">
+            <div class="error-message" id="captcha-error">This field is required.</div>
+          </div>
+          <button id="submitBtn">Submit</button>
+        </div>
+        <div class="gap-border"></div>
+        <div class="right">
+          <div class="row-container">
+            <img src="icons/address.svg" class="icons-sidebar">
+            <div class="text-row"> Binangonan Rizal, Philippines</div>
+          </div>
+          <div class="row-container">
+            <img src="icons/contact.svg" class="icons-sidebar">
+            <div class="text-row">0993-215-9148</div>
+          </div>
+          <div class="row-container">
+            <img src="icons/mail.svg" class="icons-sidebar">
+            <div class="text-row">lesleyceninagmail.com</div>
+          </div>
+          <div class="image-row">
+            <a href="https://www.facebook.com" class="socials">
+              <img src="icons/facebook.svg" alt="Icon 1" class="icons-sidebar">
+            </a>
+            <a href="https://www.instagram.com" class="socials">
+              <img src="icons/instagram.svg" alt="Icon 2" class="icons-sidebar">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "K7ZtFbC4ppGRrsR-W",
+      });
+   })();
+</script>
+  <script src="scripts/sidebar.js"></script>
+  <script src="scripts/contact_us.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: #748d92;
+    color: #d3d9d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: transform 0.7s ease;
+  }
+
+  .cover::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/keiron-crasktellanos-OLtE5xIFCzc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+    background-blend-mode: darken;
+    opacity: .5;
+    z-index: -1;
+  }
+
+  .cover .slogan{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 25px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  }
+
+  .cover .product-title{
+    font-size: 75px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+  .cover.hidden {
+    transform: translateX(-100%);
+  }
+
+  .swipe-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: rgba(0,0,0,0.1);
+    color: #d3d9d4;
+    border: solid 2px ;
+    cursor: pointer;
+    border-radius: 20px;
+
+  }
+  .swipe-btn:hover {
+    background: rgba(0,0,0,0.5);;
+  }

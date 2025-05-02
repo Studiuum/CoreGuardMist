@@ -1,0 +1,21 @@
+.rows{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem 3rem;
+
+}
+.vision_mission_content{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.vision_mission_titles{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: rgb(12, 57, 75);
+    font-weight: 600;
+    line-height: 2rem;
+    margin-right: 5rem;
+}
