@@ -120,12 +120,20 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    flex: 1 1 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    flex: 1;
     position: relative;
     text-align: center;
     transition: all 0.3s ease;
   }
   
+  .feature-card p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
   .feature-card::before {
     content: "";
     position: absolute;
@@ -164,7 +172,7 @@ body {
   
   .feature-titles {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: rgb(12, 57, 75);
     padding: .5rem;
@@ -237,9 +245,12 @@ body {
   .feature-card {
     padding: 2rem;
     border-radius: 8px;
-    flex: 1 1 1rem;
+
   }
-  
+  .feature-card p{
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   .feature-card::before {
     top: 0;
     left: 0;
@@ -260,7 +271,7 @@ body {
   }
   
   .feature-titles {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding: .5rem;
   }
