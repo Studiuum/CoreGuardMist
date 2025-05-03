@@ -2,6 +2,25 @@
  
  let genCaptcha;
  
+ function clearAllInputs() {
+  // Select all input and textarea elements
+  const inputs = document.querySelectorAll('input');
+  const textareas = document.querySelectorAll('textarea');
+
+  // Clear all input values
+  inputs.forEach(input => {
+    if (input.type !== 'button' && input.type !== 'submit' && input.type !== 'reset') {
+      input.value = '';
+    }
+  });
+
+  // Clear all textarea values
+  textareas.forEach(textarea => {
+    textarea.value = '';
+  });
+}
+
+
  function captchaGenerator() {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   let captcha = '';
@@ -120,8 +139,11 @@
     })
       .then(function(response) {
         alert("Message sent successfully!");
+        captchaGenerator();
+        clearAllInputs();
       }, function(error) {
         alert("Failed to send message: " + error.text);
+        captchaGenerator();
       });
 
     // For now, this will just log a message

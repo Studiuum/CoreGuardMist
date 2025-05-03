@@ -3,8 +3,8 @@
 }
 .container {
     position: relative;
-    margin: calc(90px + .2rem) 8.2rem;
-    margin-bottom: .2rem;
+    margin: calc(5rem + 1rem) 7rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -18,11 +18,29 @@
     background-image: url('../images/owners.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
+    filter: blur(10px);
     opacity: 0.2;
     z-index: -1;
 }
 .owners-img{
-    width: 50%;
+    width: 48%;
     object-fit: cover;
+}
+
+
+
+
+/* OTHER SCREEN SIZES */
+@media (max-width:1366px){
+    .other-content{
+        margin-top: 0px;/* push content below fixed header */
+    }
+    .container {
+        margin: calc(3rem + .5rem) 5rem;
+        margin-bottom: .5rem;
+    }
+    .owners-img{
+        width: 42%;
+        object-fit: cover;
+    }
 }

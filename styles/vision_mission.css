@@ -1,13 +1,36 @@
+/* Layout and Typography */
+.other-content {
+    margin-top: calc(5rem + 3rem); /* push content below fixed header */
+  }
+
+.container {
+    margin: 0rem 7rem;
+    background-color: rgba(255, 255, 255, 0.382);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    padding: 1.5rem 5rem;
+}
+  
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(12, 57, 75);
+    margin: 0px 0px;
+    margin-bottom: 3rem;
+  }
+
 .rows{
     display: flex;
+    flex-direction: row;
     justify-content: end;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
 
 }
 .vision_mission_content{
     font-size: 1.25rem;
-    line-height: 1.25rem;
+    line-height: 1.6rem;
     text-align: center;
 }
 
@@ -18,4 +41,54 @@
     font-weight: 600;
     line-height: 2rem;
     margin-right: 5rem;
+}
+.custom-border {
+    background: linear-gradient(to right, transparent 10%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2) 90%, transparent 90%);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+
+/* OTHER MEDIA */
+
+@media (max-width:1366px){
+    /* Layout and Typography */
+    .other-content {
+        margin-top: calc(3rem + 1.5rem); /* push content below fixed header */
+    }
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0px 0px;
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        margin: 0rem 5rem;
+        background-color: rgba(255, 255, 255, 0.382);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+        padding: 1rem 3rem;
+    }
+    
+    .rows{
+        padding: 1.5rem 0rem;
+
+    }
+    .vision_mission_content{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        text-align: center;
+    }
+
+    .vision_mission_titles{
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: rgb(12, 57, 75);
+        font-weight: 600;
+        line-height: 2rem;
+        margin-right: 5rem;
+    }
 }
