@@ -1,3 +1,16 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  height: 100vh; /* Fixes mismatch */
+  width: 100vw;
+  overflow: hidden;
+}
+
+
 .cover {
     position: fixed;
     top: 0;
@@ -21,14 +34,14 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/keiron-crasktellanos-OLtE5xIFCzc-unsplash.jpg');
+    background-image: url('../images/spray_cover_new.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
-    background-blend-mode: darken;
-    opacity: .5;
+    background-blend-mode: normal;
+    opacity: 0.7;
     z-index: -1;
   }
 
